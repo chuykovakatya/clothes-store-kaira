@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="catalog-page">
+<header class="header">
+    <a href="./index.html">
+        <img src="./figma/иконки/Kaira.png" alt="логотип" class="header__logo">
+    </a>
+
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li><a href="./cart.html"><img src="./figma/иконки/Shopping cart.png" alt="shopping"></a></li>
+            <li><a href="./profile.html"><img src="./figma/иконки/account_circle.png" alt="account"></a></li>
+            <li class="menu-item">
+                <button class="menu-btn desktop-menu-btn" type="button" aria-label="Открыть меню">
+                    <img src="./figma/иконки/Menu.png" alt="menu">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="./profile.html">Профиль</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="./cart.html">Корзина</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню">
+        <img src="./figma/иконки/Menu.png" alt="menu">
+    </button>
+</header>
+
+<div class="mobile-menu">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
+    <nav class="mobile-menu__nav">
+        <a href="./profile.html">Профиль</a>
+        <a href="./catalog.html">Каталог</a>
+        <a href="./cart.html">Корзина</a>
+    </nav>
+</div>
+
+<section class="catalog">
+
+     <h2 class="catalog__title">КАТАЛОГ</h2>
+
+    <div class="catalog__grid">
+
+        <div class="card">
+            <img src="./figma/одежда/image 1.png" alt="shirt">
+
+            <div class="card__info">
+                <button class="card__name product-open" type="button" data-id="1">Рубашка</button>
+                <p class="card__price">$25.00</p>
+            </div>
+
+            <button class="card__btn" data-id="1">В корзину</button>
+        </div>
+
+        <div class="card">
+            <img src="./figma/одежда/image 2.png" alt="costume">
+
+            <div class="card__info">
+                <button class="card__name product-open" type="button" data-id="2">Костюм</button>
+                <p class="card__price">$50.00</p>
+            </div>
+
+            <button class="card__btn" data-id="2">В корзину</button>
+        </div>
+
+       
+        <div class="card">
+            <img src="./figma/одежда/2026-04-19_17-37-21 1.png" alt="dress">
+
+            <div class="card__info">
+                <button class="card__name product-open" type="button" data-id="3">Платье</button>
+                <p class="card__price">$70.00</p>
+            </div>
+
+            <button class="card__btn" data-id="3">В корзину</button>
+        </div>
+
+        <div class="card">
+            <img src="./figma/одежда/image 3.png" alt="pants">
+
+            <div class="card__info">
+                <button class="card__name product-open" type="button" data-id="4">Брюки</button>
+                <p class="card__price">$35.00</p>
+            </div>
+
+            <button class="card__btn" data-id="4">В корзину</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="toast" id="toast"></div>
+<script src="./main.js"></script>
+
+</body>
+</html>

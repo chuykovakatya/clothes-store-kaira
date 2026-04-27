@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="profile-page">
+
+    <header class="header">
+    <a href="./index.html">
+        <img src="./figma/иконки/Kaira.png" alt="логотип" class="header__logo">
+    </a>
+
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li><a href="./cart.html"><img src="./figma/иконки/Shopping cart.png" alt="shopping"></a></li>
+            <li><a href="./profile.html"><img src="./figma/иконки/account_circle.png" alt="account"></a></li>
+            <li class="menu-item">
+                <button class="menu-btn desktop-menu-btn" type="button" aria-label="Открыть меню">
+                    <img src="./figma/иконки/Menu.png" alt="menu">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="./profile.html">Профиль</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="./cart.html">Корзина</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню">
+        <img src="./figma/иконки/Menu.png" alt="menu">
+    </button>
+</header>
+
+<div class="mobile-menu">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
+    <nav class="mobile-menu__nav">
+        <a href="./profile.html">Профиль</a>
+        <a href="./catalog.html">Каталог</a>
+        <a href="./cart.html">Корзина</a>
+    </nav>
+</div>
+
+ <section class="profile">
+ <div class="profile__card">
+
+
+        
+<h2 class="profile__title">Выбери аватарку</h2>
+
+<div class="profile-form">
+<div class="profile__avatars">
+    <ion-icon name="moon-outline" class="avatar-option"></ion-icon>
+    <ion-icon name="rose-outline" class="avatar-option"></ion-icon>
+    <ion-icon name="planet-outline" class="avatar-option"></ion-icon>
+</div>
+
+        <input type="text" placeholder="Имя" class="profile__input">
+        <input type="text" placeholder="Фамилия" class="profile__input">
+        <input type="tel" placeholder="Телефон" class="profile__input">
+
+        <div class="profile__actions">
+    <button class="profile__btn">Зарегистрироваться</button>
+    <button class="login-btn">Войти</button>
+</div>
+</div>
+
+<div class="profile-view" style="display: none;">
+
+    <div class="profile-view__avatar" id="viewAvatar"></div>
+    <h2 class="profile-view__title">Профиль</h2>
+
+    <p><b>Имя:</b> <span id="viewName"></span></p>
+    <p><b>Фамилия:</b> <span id="viewSurname"></span></p>
+    <p><b>Телефон:</b> <span id="viewPhone"></span></p>
+
+    <button class="logout-btn">Выйти</button>
+
+</div>
+
+</div> 
+     <h2 class="profile-history-title">Покупки</h2>
+        <div class="profile-history"></div>
+</section>
+
+
+<div class="toast" id="toast">Профиль успешно создан!</div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>

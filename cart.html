@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="cart-page">
+
+<header class="header">
+    <a href="./index.html">
+        <img src="./figma/иконки/Kaira.png" alt="логотип" class="header__logo">
+    </a>
+
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li><a href="./cart.html"><img src="./figma/иконки/Shopping cart.png" alt="shopping"></a></li>
+            <li><a href="./profile.html"><img src="./figma/иконки/account_circle.png" alt="account"></a></li>
+            <li class="menu-item">
+                <button class="menu-btn desktop-menu-btn" type="button" aria-label="Открыть меню">
+                    <img src="./figma/иконки/Menu.png" alt="menu">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="./profile.html">Профиль</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="./cart.html">Корзина</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню">
+        <img src="./figma/иконки/Menu.png" alt="menu">
+    </button>
+</header>
+
+<div class="mobile-menu">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
+    <nav class="mobile-menu__nav">
+        <a href="./profile.html">Профиль</a>
+        <a href="./catalog.html">Каталог</a>
+        <a href="./cart.html">Корзина</a>
+    </nav>
+</div>
+
+<h1 class="cart-title">КОРЗИНА</h1>
+<p class="cart-count">Товаров: 0</p>
+<div class="cart-list"></div>
+
+<div class="cart-summary">
+    <p class="cart-total">Итого: $0</p>
+    <button class="cart-pay" onclick="pay()">Оплатить</button>
+</div>
+
+
+
+
+<div class="toast" id="toast"></div>
+<script src="./main.js"></script>
+</body>
+</html>

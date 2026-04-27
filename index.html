@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaira-бренд одежды</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+    <a href="./index.html">
+        <img src="./figma/иконки/Kaira.png" alt="логотип" class="header__logo">
+    </a>
+
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li><a href="./cart.html"><img src="./figma/иконки/Shopping cart.png" alt="shopping"></a></li>
+            <li><a href="./profile.html"><img src="./figma/иконки/account_circle.png" alt="account"></a></li>
+            <li class="menu-item">
+                <button class="menu-btn desktop-menu-btn" type="button" aria-label="Открыть меню">
+                    <img src="./figma/иконки/Menu.png" alt="menu">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="./profile.html">Профиль</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="./cart.html">Корзина</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню">
+        <img src="./figma/иконки/Menu.png" alt="menu">
+    </button>
+</header>
+
+<div class="mobile-menu">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
+    <nav class="mobile-menu__nav">
+        <a href="./profile.html">Профиль</a>
+        <a href="./catalog.html">Каталог</a>
+        <a href="./cart.html">Корзина</a>
+    </nav>
+</div>
+
+    <section class="hero">
+    <div class="hero__left"></div>
+    <div class="hero__right"></div>
+
+    <div class="hero__overlay-dark"></div>
+
+    <div class="hero__overlay">
+        <img src="./figma/тектс/НОВАЯ КОЛЛЕКЦИЯ.png" class="hero__text hero__text--top">
+        <img src="./figma/тектс/LIVIA BLAKE.png" class="hero__text hero__text--bottom">
+    </div>
+</section>
+
+<a href="./catalog.html" class="catalog-btn">
+    <img src="./figma/тектс/Rectangle 17.png" alt="в каталог">
+</a>
+
+<section class="slider">
+
+    <div class="slider__wrapper">
+
+        <div class="slider__item">
+
+            <div class="product" data-id="1">
+                <img src="./figma/одежда/image 1.png" alt="shirt">
+                <div class="product__info">
+                    <button class="product__name product-open" type="button" data-id="1">Рубашка</button>
+                    <img src="./figma/цены/$25.00.png" alt="price">
+                </div>
+            </div>
+
+            <div class="product" data-id="2">
+                <img src="./figma/одежда/image 2.png" alt="costume">
+
+                <div class="product__info">
+                    <button class="product__name product-open" type="button" data-id="2">Костюм</button>
+                    <img src="./figma/цены/$48.00.png" alt="price">
+                </div>
+            </div>
+        </div>
+       
+    <div class="slider__item">
+        <div class="product" data-id="3">
+            <img src="./figma/одежда/2026-04-19_17-37-21 1.png" alt="dress">
+
+            <div class="product__info">
+                <button class="product__name product-open" type="button" data-id="3">Платье</button>
+                
+                <img src="./figma/цены/$42.00.png" alt="price">
+            </div>
+        </div>
+
+        <div class="product" data-id="4">
+            <img src="./figma/одежда/image 3.png" alt="pants">
+
+            <div class="product__info">
+                <button class="product__name product-open" type="button" data-id="4">Брюки</button>
+                
+                <img src="./figma/цены/$28.00.png" alt="price">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="slider__arrow" id="arrow">→</div>
+</section>
+   
+<section class="promo">
+
+    <div class="promo__left">
+        <img src="./figma/Rectangle 435.png" alt="main image">
+    </div>
+
+    <div class="promo__right">
+
+        <img src="./figma/тектс/Union.png" alt="title" class="promo__title">
+
+        <img src="./figma/тектс/Kaira - дизайнерский бренд одежды в классическом стиле. Мы создаем лаконичные, продуманные вещи с акцентом на качество, детали и вне време.png" alt="text" class="promo__text">
+    </div>
+</section>
+
+<section class="footer-block">
+
+    <img src="./figma/тектс/Looking for a personalized piece_-1.png" class="footer-block__title">
+
+    
+    <img src="./figma/тектс/Bostel Technologies,-1.png" class="footer-block__text">
+
+   
+    <button class="footer-block__button" id="contactBtn">
+    <img src="./figma/тектс/Union-2.png">
+    </button>
+
+   
+    <img src="./figma/тектс/Line 57.png" class="footer-block__line">
+
+    
+    <div class="footer-block__bottom">
+
+        
+        <img src="./figma/тектс/Bostel Technologies,.png" class="footer-block__bottom-text">
+
+       
+        <div class="footer-block__icons">
+            <a href="#"><img src="./figma/иконки/Union-3.png"></a>
+            <a href="#"><img src="./figma/иконки/Union-6.png"></a>
+            <a href="#"><img src="./figma/иконки/Union-4.png"></a>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="modal" id="contactModal">
+
+    <div class="modal__content">
+
+        <span class="modal__close" id="modalClose">×</span>
+
+        <h2>Контакты</h2>
+
+        <p>Email: <b>kaira@gmail.com</b></p>
+        <p>Телефон: <b>+7 (954) 125-63-24</b></p>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script src="./main.js"></script>
+</body>
+</html>
